@@ -1,18 +1,16 @@
 {% extends "templates/layout.html" %}
 {% block title %}{{title}}{% endblock %}
 {% block body %}
-
 <ul>
-{% for item in items %}
-        <li>
-    	<h3>
-            <a href="{{category}}/{{item.metadata.slug}}">{{ item.metadata.title }}</a>
+    {% for item in items %}
+    <li>
+        <h3>
+            <a href="{{item.metadata.slug}}">{{ item.metadata.title }}</a>
         </h3>
-	<ul>
-             <li><b>{{item.metadata.author}}</b>, <i>{{item.metadata.date_created}}</i>.</li>
+        <ul>
+            <li><b>{{item.metadata.author}}</b>, <i>{{item.metadata.date_created}}</i>.</li>
         </ul>
-        </li>
-{% endfor %}
+    </li>
+    {% endfor %}
 </ul>
-
 {% endblock %}
