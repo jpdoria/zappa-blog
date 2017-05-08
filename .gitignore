@@ -74,3 +74,4 @@ target/
 *~
 tests/zappa_settings.json
 account.key
+zappa_settings.json
