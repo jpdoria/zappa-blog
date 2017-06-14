@@ -75,7 +75,7 @@ To build a bot, you need to create a set of actions a.k.a **Intents** that you w
 
 ## Lambda initialization and validation
 
-We can use AWS Lambda to validate the user input using the initialization and validation codeHook. This code gets executed at every turn of the converstation. This codehook can be used to set up session parameters, validate user input and customize responses.
+We can use AWS Lambda to validate the user input using the initialization and validation codeHook. This code gets executed at every turn of the conversation. This codehook can be used to set up session parameters, validate user input and customize responses.
 
 This is the part where we write our code.
 
@@ -154,6 +154,18 @@ Open the **Test Bot** chatbox then test your bot.
 ## Publish
 
 If you're happy with the result, you can now publish your bot to Facebook Messenger, Slack, or Twilio! 😊
+
+# Pricing
+
+## Text
+Price per 1,000 requests: $0.75  
+Free Tier* (requests per month): 10,000
+
+## Speech
+Price per 1,000 requests: $4.00  
+Free Tier* (requests per month): 5,000
+
+*Available for the first year upon sign-up to new Amazon Lex customers
 
 # Learn More
 
